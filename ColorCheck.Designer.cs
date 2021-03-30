@@ -37,8 +37,8 @@ namespace SKinEditer
             this.p_label = new System.Windows.Forms.Panel();
             this.lb_prompt = new System.Windows.Forms.Label();
             this.gb_2 = new System.Windows.Forms.GroupBox();
-            this.rtb = new System.Windows.Forms.RichTextBox();
             this.lb_update = new System.Windows.Forms.Label();
+            this.rtb = new System.Windows.Forms.RichTextBox();
             this.gb_1.SuspendLayout();
             this.p_label.SuspendLayout();
             this.gb_2.SuspendLayout();
@@ -123,15 +123,6 @@ namespace SKinEditer
             this.gb_2.TabStop = false;
             this.gb_2.Text = "step 2";
             // 
-            // rtb
-            // 
-            this.rtb.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.rtb.Location = new System.Drawing.Point(6, 40);
-            this.rtb.Name = "rtb";
-            this.rtb.Size = new System.Drawing.Size(627, 560);
-            this.rtb.TabIndex = 0;
-            this.rtb.Text = "";
-            // 
             // lb_update
             // 
             this.lb_update.AutoSize = true;
@@ -141,6 +132,15 @@ namespace SKinEditer
             this.lb_update.Size = new System.Drawing.Size(165, 19);
             this.lb_update.TabIndex = 1;
             this.lb_update.Text = "下列SKIN將會更新";
+            // 
+            // rtb
+            // 
+            this.rtb.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.rtb.Location = new System.Drawing.Point(6, 40);
+            this.rtb.Name = "rtb";
+            this.rtb.Size = new System.Drawing.Size(627, 560);
+            this.rtb.TabIndex = 0;
+            this.rtb.Text = "";
             // 
             // ColorCheck
             // 

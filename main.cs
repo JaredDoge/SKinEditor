@@ -64,12 +64,14 @@ namespace SKinEditer
 
             menu_file_check_color.Enabled = false;
 
+            menu_file_build_skin.Enabled = false;
+
         }
 
         private void initWhite()
         {
-
             string white = Properties.Settings.Default.whiteFile;
+
             if (white == null || white.Length == 0)
             {
                 whileList = new List<WhileItem>();
@@ -793,6 +795,7 @@ namespace SKinEditer
                 //啟用檢查XML
                 menu_file_check_xml.Enabled = true;
                 menu_file_check_color.Enabled = true;
+                menu_file_build_skin.Enabled = true;
                 menu_file_open_project.Enabled = false;
             }
 

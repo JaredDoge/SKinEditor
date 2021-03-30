@@ -60,8 +60,8 @@ namespace SKinEditer
         {
             InitializeComponent();
 
-            //Properties.Settings.Default.whiteColor = "";
-            //Properties.Settings.Default.Save();
+            Properties.Settings.Default.whiteColor = "";
+            Properties.Settings.Default.Save();
 
             initWhite();
             initTime();

@@ -36,37 +36,40 @@ namespace SKinEditer
             this.btn_close = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.clb = new System.Windows.Forms.CheckedListBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pb
             // 
             this.pb.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pb.Location = new System.Drawing.Point(12, 105);
+            this.pb.Location = new System.Drawing.Point(12, 588);
             this.pb.Name = "pb";
-            this.pb.Size = new System.Drawing.Size(528, 30);
+            this.pb.Size = new System.Drawing.Size(634, 30);
             this.pb.TabIndex = 0;
             // 
             // lb_text
             // 
             this.lb_text.AutoSize = true;
             this.lb_text.Font = new System.Drawing.Font("新細明體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lb_text.Location = new System.Drawing.Point(12, 89);
+            this.lb_text.Location = new System.Drawing.Point(9, 571);
             this.lb_text.Name = "lb_text";
-            this.lb_text.Size = new System.Drawing.Size(0, 13);
+            this.lb_text.Size = new System.Drawing.Size(59, 13);
             this.lb_text.TabIndex = 1;
+            this.lb_text.Text = "檔案名稱";
             // 
             // lb_progress
             // 
             this.lb_progress.AutoSize = true;
-            this.lb_progress.Location = new System.Drawing.Point(507, 90);
+            this.lb_progress.Location = new System.Drawing.Point(602, 572);
             this.lb_progress.Name = "lb_progress";
-            this.lb_progress.Size = new System.Drawing.Size(0, 12);
+            this.lb_progress.Size = new System.Drawing.Size(44, 12);
             this.lb_progress.TabIndex = 2;
+            this.lb_progress.Text = "100/100";
             // 
             // btn_ok
             // 
-            this.btn_ok.Location = new System.Drawing.Point(384, 141);
+            this.btn_ok.Location = new System.Drawing.Point(490, 624);
             this.btn_ok.Name = "btn_ok";
             this.btn_ok.Size = new System.Drawing.Size(75, 23);
             this.btn_ok.TabIndex = 3;
@@ -76,7 +79,7 @@ namespace SKinEditer
             // 
             // btn_close
             // 
-            this.btn_close.Location = new System.Drawing.Point(465, 141);
+            this.btn_close.Location = new System.Drawing.Point(571, 624);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(75, 23);
             this.btn_close.TabIndex = 4;
@@ -90,7 +93,7 @@ namespace SKinEditer
             this.label1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(528, 74);
+            this.label1.Size = new System.Drawing.Size(634, 74);
             this.label1.TabIndex = 5;
             this.label1.Text = "\"提示文字\"";
             // 
@@ -99,14 +102,24 @@ namespace SKinEditer
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(528, 74);
+            this.panel1.Size = new System.Drawing.Size(634, 74);
             this.panel1.TabIndex = 6;
+            // 
+            // clb
+            // 
+            this.clb.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.clb.FormattingEnabled = true;
+            this.clb.Location = new System.Drawing.Point(12, 92);
+            this.clb.Name = "clb";
+            this.clb.Size = new System.Drawing.Size(634, 444);
+            this.clb.TabIndex = 7;
             // 
             // DrawableXmlCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 176);
+            this.ClientSize = new System.Drawing.Size(658, 659);
+            this.Controls.Add(this.clb);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_ok);
@@ -131,5 +144,6 @@ namespace SKinEditer
         private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckedListBox clb;
     }
 }

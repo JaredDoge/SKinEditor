@@ -94,5 +94,17 @@ namespace SKinEditer.Properties {
                 this["updateTime"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string whiteXml {
+            get {
+                return ((string)(this["whiteXml"]));
+            }
+            set {
+                this["whiteXml"] = value;
+            }
+        }
     }
 }
