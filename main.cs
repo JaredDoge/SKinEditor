@@ -179,7 +179,12 @@ namespace SKinEditer
             cb_src.Items.Add("drawable-xhdpi");
             cb_src.Items.Add("drawable-xxhdpi");
             cb_src.Items.Add("drawable-xxxhdpi");
-
+            cb_src.Items.Add("mipmap-hdpi");
+            cb_src.Items.Add("mipmap-mdpi");
+            cb_src.Items.Add("mipmap-hdpi");
+            cb_src.Items.Add("mipmap-xhdpi");
+            cb_src.Items.Add("mipmap-xxhdpi");
+            cb_src.Items.Add("mipmap-xxxhdpi");
             //預設用drawable-xhdpi
             cb_src.SelectedIndex = 4;
 
@@ -523,6 +528,10 @@ namespace SKinEditer
             Dictionary<string, SKinRow> rowDictionary,
              DataRow row)
         {
+
+           
+
+
             string path = $@"{selectSkinProjectPath}\{columnsName}\src\main\res\{selectFolder}\{fileName}";
             var img = Image.FromFile(path);
 
@@ -1069,6 +1078,11 @@ namespace SKinEditer
                 String name = "";
                 if (s is SkinRowEmpty)
                 {
+                 
+                    if (!Directory.Exists(((SkinRowEmpty)s).folderPath))
+                    {
+                        Directory.CreateDirectory(((SkinRowEmpty)s).folderPath);
+                    }
                     savePath = ((SkinRowEmpty)s).folderPath + $@"\{((SkinRowEmpty)s).imgName}";
                     name = ((SkinRowEmpty)s).imgName;
                 }
